@@ -1,5 +1,55 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+
+
+
+
+
+List of commands:
+
+npm install -g npx
+
+npx create-next-app@latest ./
+
+npm install @clerk/nextjs
+
+npm install @uploadthing/react
+
+npm install mongoose
+
+npm install svix
+
+npm install uploadthing
+
+npm install tailwindcss-animate
+
+npm install clerk/themes
+
+================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Getting Started
 
 First, run the development server:
