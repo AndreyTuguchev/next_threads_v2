@@ -14,6 +14,8 @@ npx create-next-app@latest ./
 
 npm install @clerk/nextjs
 
+npm install @clerk/themes
+
 npm install @uploadthing/react
 
 npm install mongoose
@@ -24,7 +26,6 @@ npm install uploadthing
 
 npm install tailwindcss-animate
 
-npm install clerk/themes
 
 ================================================
 
