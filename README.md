@@ -18,6 +18,8 @@ npm install @clerk/themes
 
 npm install @uploadthing/react
 
+npm install mongodb
+
 npm install mongoose
 
 npm install svix
@@ -68,8 +70,8 @@ TypeScript-first schema validation with static type inference
 
 
 
-
-
+uploadthingdocs
+https://docs.uploadthing.com/api-reference/react
 
 
 
