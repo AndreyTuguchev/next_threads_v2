@@ -32,7 +32,7 @@ npm install tailwindcss-animate
 npx shadcn-ui@latest add form
 
 ```
-√ Would you like to use TypeScript (recommended)? ... no / yes
+√ Would you like to use TypeScript (recommended)? ... yes
 √ Which style would you like to use? » Default
 √ Which color would you like to use as base color? » Slate
 √ Where is your global CSS file? ... app/globals.css

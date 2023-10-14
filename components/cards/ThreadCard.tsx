@@ -61,8 +61,19 @@ function ThreadCard ({
 
                         <div className="mt-5 flex flex-col gap-3">
                             <div className="flex gap-3.5">
-                                <Image src="/assets/heart-gray.svg" alt="" fill />
+                                <Image src="/assets/heart-gray.svg" alt="heart" width={24} height={24} className="cursor-pointer object-contian" />
+                                <Link href={`/thread/${id}`}>
+                                    <Image src="/assets/reply.svg" alt="reply" width={24} height={24} className="cursor-pointer object-contian" />
+                                </Link>
+                                <Image src="/assets/repost.svg" alt="repost" width={24} height={24} className="cursor-pointer object-contian" />
+                                <Image src="/assets/share.svg" alt="share" width={24} height={24} className="cursor-pointer object-contian" />
                             </div>
+
+                            {isComment && comments.length > 0 && (
+                                <Link href={`/thread/${id}`}>
+                                    <p className="mt-1 text-subtle-medium text-gray-1 ">{comments.length}</p>
+                                </Link>
+                            )}
                         </div>
                     </div>
                 </div>
