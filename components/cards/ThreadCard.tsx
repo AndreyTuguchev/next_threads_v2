@@ -47,14 +47,14 @@ function ThreadCard ({
             <div className="flex items-start justify-between">
                 <div className="flex w-full flex-1 flex-row gap-4">
                     <div className="flex flex-col items-center">
-                        <Link href={`/profile/${author.id}`} className="relative h-11 w-11">
+                        <Link aria-label="Thread author profile page" href={`/profile/${author.id}`} className="relative h-11 w-11">
                             <Image src={author.image} alt="Profile Image" fill className="cursor-pointer rounded-full" />
                         </Link>
 
                         <div className="thread-card_bar"></div>
                     </div>
                     <div className="flex w-full flex-col">
-                        <Link href={`/profile/${author.id}`} className="w-fit">
+                        <Link aria-label="Thread author profile page" href={`/profile/${author.id}`} className="w-fit">
                             <h4 className="cursor-pointer text-base-semibold text-light-1">{author.name}</h4>
                         </Link>
 
@@ -63,7 +63,7 @@ function ThreadCard ({
                         <div className={`${isComment && 'mb-10'} mt-5 flex flex-col gap-3 `}>
                             <div className="flex gap-3.5">
                                 <Image src="/assets/heart-gray.svg" alt="heart" width={24} height={24} className="cursor-pointer object-contian" />
-                                <Link href={`/thread/${id}`}>
+                                <Link aria-label="Comment this thread" href={`/thread/${id}`}>
                                     <Image src="/assets/reply.svg" alt="reply" width={24} height={24} className="cursor-pointer object-contian" />
                                 </Link>
                                 <Image src="/assets/repost.svg" alt="repost" width={24} height={24} className="cursor-pointer object-contian" />
@@ -71,7 +71,7 @@ function ThreadCard ({
                             </div>
 
                             {isComment && comments.length > 0 && (
-                                <Link href={`/thread/${id}`}>
+                                <Link aria-label="Comment this thread" href={`/thread/${id}`}>
                                     <p className="mt-1 text-subtle-medium text-gray-1 ">{comments.length}</p>
                                 </Link>
                             )}
@@ -83,7 +83,7 @@ function ThreadCard ({
             </div>
             
             {!isComment && community && (
-                <Link href={`/communities/${community.id}`} className="mt-5 flex items-center">
+                <Link aria-label="Community page" href={`/communities/${community.id}`} className="mt-5 flex items-center">
                     <p className="text-subtle-medium text-gray-1">
                         {formatDateString(createdAt)}
                         {" "}- {community.name} Community

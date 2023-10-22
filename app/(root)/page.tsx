@@ -4,8 +4,6 @@ import User from '@/lib/models/user.model';
 import { UserButton } from '@clerk/nextjs';
 import { currentUser } from '@clerk/nextjs';
 
-
-
 export default async function Home() {
   const result = await fetchPosts(1, 30);
   const user = await currentUser();
