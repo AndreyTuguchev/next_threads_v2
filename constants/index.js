@@ -3,31 +3,37 @@ export const sidebarLinks = [
       imgURL: "/assets/home.svg",
       route: "/",
       label: "Home",
+      ariaLabel: "Home page",
     },
     {
       imgURL: "/assets/search.svg",
       route: "/search",
       label: "Search",
+      ariaLabel: "Search page",
     },
     {
       imgURL: "/assets/heart.svg",
       route: "/activity",
       label: "Activity",
+      ariaLabel: "Activity page",
     },
     {
       imgURL: "/assets/create.svg",
       route: "/create-thread",
       label: "Create Thread",
+      ariaLabel: "Create New Thread",
     },
     {
       imgURL: "/assets/community.svg",
       route: "/communities",
       label: "Communities",
+      ariaLabel: "Communities page",
     },
     {
       imgURL: "/assets/user.svg",
       route: "/profile",
       label: "Profile",
+      ariaLabel: "Profile page",
     },
   ];
   
